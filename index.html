@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Grandiosa</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <div class="burger-menu" id="burger-menu">&#9776;</div>
+
+        <div class="nav-links" id="nav-links">
+          <a href="./index.html">Home</a>
+          <a href="#about">About</a>
+          <a href="./menu.html">Menu</a>
+          <a href="./contact.html">Contact</a>
+        </div>
+      </div>
+    </nav>
+    <div id="background-image"></div>
+    <div id="header-box">
+      <h1 id="title">La Grandiosa</h1>
+    </div>
+    <div id="info-text">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis ea
+      blanditiis distinctio sint, unde molestiae omnis pariatur facilis.
+      Eveniet, tenetur quia quas, debitis eligendi repellendus voluptatibus,
+      facilis reprehenderit nemo assumenda veniam earum ullam provident magnam!
+      Magnam, nostrum modi nemo qui libero aliquam aspernatur, nesciunt quod,
+      rerum ut suscipit dolor veniam repudiandae! Architecto quia molestias
+      provident, quisquam ab eaque illum maxime ut voluptas, magni, itaque quasi
+      explicabo! Veritatis quaerat esse pariatur itaque omnis! Voluptas iusto,
+      autem facilis impedit est natus tenetur aliquid magnam consectetur sequi
+      exercitationem consequatur molestias earum atque explicabo quidem et nam
+      velit voluptatum inventore iste distinctio libero fugiat!
+    </div>
+    <script>
+      const burgerMenu = document.getElementById("burger-menu");
+      const navLinks = document.getElementById("nav-links");
+
+      burgerMenu.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

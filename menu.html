@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Grandiosa</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <div class="burger-menu" id="burger-menu">&#9776;</div>
+
+        <div class="nav-links" id="nav-links">
+          <a href="./index.html">Home</a>
+          <a href="#about">About</a>
+          <a href="./menu.html">Menu</a>
+          <a href="./contact.html">Contact</a>
+        </div>
+      </div>
+    </nav>
+    <div id="background-image"></div>
+    <div id="header-box">
+      <h1 id="title">La Grandiosa</h1>
+    </div>
+
+    <section id="menu">
+      <div class="menu-item">
+        <img src="images/pizza.jpg" alt="Pizza" class="menu-image" />
+        <div class="menu-description">
+          <h3>Pizza Margherita | 125kr</h3>
+          <p>
+            A classic pizza topped with fresh tomatoes, mozzarella, and basil.
+          </p>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="images/pasta.jpg" alt="Pasta" class="menu-image" />
+        <div class="menu-description">
+          <h3>Spaghetti Carbonara | 145kr</h3>
+          <p>
+            Delicious pasta served with a creamy sauce of eggs, cheese, and
+            pancetta. 145kr
+          </p>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="images/salad.jpg" alt="Salad" class="menu-image" />
+        <div class="menu-description">
+          <h3>Caesar Salad | 145kr</h3>
+          <p>
+            A healthy option with fresh greens, tomatoes, croutons, chicken,
+            bacon, parmesan and our homemade caesar dressing. 145kr
+          </p>
+        </div>
+      </div>
+    </section>
+    <script>
+      const burgerMenu = document.getElementById("burger-menu");
+      const navLinks = document.getElementById("nav-links");
+
+      burgerMenu.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
